@@ -79,7 +79,7 @@ const App = () => {
         'Kot Bellian TP (167 Km)', 'Essa Khel TP (210 Km)', 'Kundal TP (220 Km)', 'Abdul Khel TP (266 Km)', 'Yarik MTP (293 Km)'
       ]
     },
-    'E-35 ': {
+    'E-35 / M-15': {
       name: 'E-35 / M-15 (Hazara Motorway) 96 Km',
       northDir: 'towards Gilgit / Mansehra',
       southDir: 'towards Islamabad / Peshawar',
