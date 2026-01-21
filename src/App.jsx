@@ -574,7 +574,6 @@ const App = () => {
             <input type="password" value={loginPassword} onChange={(e) => setLoginPassword(e.target.value)} placeholder="Password" className="w-full px-4 py-2 border rounded-lg mb-3" />
             {loginError && <p className="text-red-600 text-sm mb-3">{loginError}</p>}
             <button onClick={handleLogin} className="w-full py-3 bg-blue-600 text-white rounded-lg font-bold">Login</button>
-            <p className="text-xs text-gray-600 mt-3">Demo: admin_m2 / LHR@2024pk</p>
           </div>
         </div>
       )}
