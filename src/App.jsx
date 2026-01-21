@@ -410,19 +410,17 @@ const App = () => {
               )}
             </div>
 
-            <div className="bg-white rounded-lg shadow-lg p-3 mb-4 overflow-x-auto">
-              <div className="min-w-[650px]">
+            <div className="bg-white rounded-lg shadow-lg p-3 mb-4">
+              <div className="w-full">
                 <div className="grid gap-2">
-                  <div className="grid gap-3 pb-2 border-b-4 border-gray-500 font-semibold text-sm" style={{ gridTemplateColumns: '50px 2fr 1fr 1fr' }}>
-                    <div className="text-center">Sr. No.</div>
-                    <div>Toll Plaza (TP)</div>
+                  <div className="grid gap-2 pb-2 border-b-4 border-gray-500 font-semibold text-xs" style={{ gridTemplateColumns: '30px 1fr 60px 60px' }}>
+                    <div className="text-center">No.</div>
+                    <div className="text-left">Toll Plaza</div>
                     <div className="text-center">
-                      <div>North Side</div>
-                      <div className="text-xs font-normal text-gray-600 mt-1">({motorwayData.northDir})</div>
+                      <div>North</div>
                     </div>
                     <div className="text-center">
-                      <div>South Side</div>
-                      <div className="text-xs font-normal text-gray-600 mt-1">({motorwayData.southDir})</div>
+                      <div>South</div>
                     </div>
                   </div>
 
