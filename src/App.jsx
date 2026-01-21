@@ -310,19 +310,6 @@ const App = () => {
 
   return (
     <div className="min-h-screen bg-gray-900 p-4 flex flex-col items-center">
-      <div className="bg-gray-800 rounded-lg p-4 mb-4 w-full max-w-6xl">
-        <div className="flex items-center justify-between">
-          <h2 className="text-white text-xl font-bold">Interactive Demo</h2>
-          <div className="flex gap-2">
-            <button onClick={() => setViewMode('mobile')} className={`flex items-center gap-2 px-4 py-2 rounded-lg font-semibold ${viewMode === 'mobile' ? 'bg-blue-600 text-white' : 'bg-gray-700 text-gray-300'}`}>
-              <Smartphone className="w-5 h-5" />Mobile
-            </button>
-            <button onClick={() => setViewMode('desktop')} className={`flex items-center gap-2 px-4 py-2 rounded-lg font-semibold ${viewMode === 'desktop' ? 'bg-blue-600 text-white' : 'bg-gray-700 text-gray-300'}`}>
-              <Monitor className="w-5 h-5" />Desktop
-            </button>
-          </div>
-        </div>
-      </div>
 
       <div className={`${containerClass} bg-gray-800 rounded-xl shadow-2xl overflow-hidden border-4 border-gray-700`}>
         <div className="h-full overflow-y-auto bg-gradient-to-br from-blue-50 to-indigo-100">
@@ -447,7 +434,7 @@ const App = () => {
                         )}
                         <div className="grid gap-2 items-center py-2 border-b-2 border-gray-400 hover:bg-gray-50 transition-colors" style={{ gridTemplateColumns: '30px 1fr 60px 60px' }}>
                           <div className="text-xs font-bold text-gray-700 text-center">{index + 1}</div>
-                          <div className="text-xs font-medium text-gray-800 pr-1">{plaza.replace(/\s*\(\d+\s*Km\)$/, '')}</div>
+                          <div className="text-xs font-medium text-gray-800 pr-1">{plaza}</div>
                           <div className="flex justify-center">
                             <button onClick={() => handlePlazaClick(activeTab, plaza, 'north', status.north)} className={`flex flex-col items-center justify-center gap-1 px-2 py-1.5 rounded-lg text-white text-[10px] w-full font-semibold ${getStatusColor(status.north?.status)} cursor-pointer hover:opacity-80`}>
                               {getStatusIcon(status.north?.status)}
