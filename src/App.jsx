@@ -306,7 +306,7 @@ const App = () => {
     const status = plazaStatuses[key];
     return status?.north?.status === 'heavy' || status?.south?.status === 'heavy';
   }).length;
-  const containerClass = viewMode === 'mobile' ? 'w-[375px] h-[667px]' : 'w-full max-w-6xl h-[700px]';
+  const containerClass = viewMode === 'mobile' ? 'max-w-[400px] h-full' : 'w-full max-w-6xl h-[700px]';
 
   return (
     <div className="min-h-screen bg-gray-900 p-4 flex flex-col items-center">
